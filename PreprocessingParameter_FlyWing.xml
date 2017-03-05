@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<premosa>
+  
+  <required>
+    <inputFolder>/Users/blasse/RawData</inputFolder>
+    <folderNameExpression>t{iii}</folderNameExpression>
+    <fileNameExpression>20120531_Pos{i}_p000001t00000TIMEc01.tif</fileNameExpression>
+    <tStart>75</tStart>
+    <tEnd>75</tEnd>
+    <fiji>/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/</fiji>
+    <scriptLocation>/Users/blasse/FijiScripts</scriptLocation>
+    <stitching>
+      <tileNumber>24</tileNumber>
+      <gridSizeX>3</gridSizeX>
+      <gridSizeY>8</gridSizeY>
+      <firstIndex>1</firstIndex>
+    </stitching>
+    <outputFolder>/Users/blasse/PreprocessedData</outputFolder>
+  </required>
+  
+  <optional>
+    <verbose>false</verbose>
+    <projection>
+      <radius>16</radius>
+      <distance>2</distance>
+      <threshold>50</threshold>
+      <printHeightMap>true</printHeightMap>
+    </projection>
+    <stitching>
+      <overlap>8</overlap>
+      <masterTileConfig></masterTileConfig>
+    </stitching>
+    <contrastOptimization>
+      <flatField>/Users/blasse/FFC.tif</flatField>
+      <minIntensity>10</minIntensity>
+      <maxIntensity>245</maxIntensity>
+      <numberOfPixelPairs>100</numberOfPixelPairs>
+      <lambda1>0.1</lambda1>
+      <lambda2>0.2</lambda2>
+    </contrastOptimization>
+    <intermediateFileDeletion>false</intermediateFileDeletion>
+  </optional>
+  
+</premosa>

@@ -2,20 +2,20 @@
 <premosa>
   
   <required>
-    <inputFolder>/Users/blasse/RawData</inputFolder>
+    <inputFolder></inputFolder>
     <folderNameExpression>t{iii}</folderNameExpression>
     <fileNameExpression>20120531_Pos{i}_p000001t00000TIMEc01.tif</fileNameExpression>
     <tStart>75</tStart>
     <tEnd>75</tEnd>
-    <fiji>/Applications/Fiji.app/Contents/MacOS/ImageJ-macosx --java-home /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/</fiji>
-    <scriptLocation>/Users/blasse/FijiScripts</scriptLocation>
+    <fiji></fiji>
+    <scriptLocation></scriptLocation>
     <stitching>
       <tileNumber>24</tileNumber>
       <gridSizeX>3</gridSizeX>
       <gridSizeY>8</gridSizeY>
       <firstIndex>1</firstIndex>
     </stitching>
-    <outputFolder>/Users/blasse/PreprocessedData</outputFolder>
+    <outputFolder></outputFolder>
   </required>
   
   <optional>
